@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBOnlineBattleViewController.h"
 
 @interface SBViewController : UIViewController
+
+
+- (IBAction)buttonOnlineBattlePressed:(UIButton *)sender;
 
 @end
