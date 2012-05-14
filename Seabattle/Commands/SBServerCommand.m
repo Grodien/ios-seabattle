@@ -1,23 +1,23 @@
 //
-//  SBPlayer.m
+//  SBServerCommand.m
 //  Seabattle
 //
 //  Created by Thomas Bomatter on 5/14/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "SBPlayer.h"
+#import "SBServerCommand.h"
 
-@implementation SBPlayer
+@implementation SBServerCommand
 
-@synthesize name;
-@synthesize playField;
+@synthesize command;
+@synthesize params;
 
-- (id)initMySelf {
+- (id)initWithParams:(NSArray*)param {
   if (self = [super init]) {
-    name = @"Thomas";
-    //TODO: load NSUserDefaults
+    params = param;
   }
+  
   return self;
 }
 

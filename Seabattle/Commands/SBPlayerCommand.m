@@ -22,7 +22,9 @@
 }
 
 - (NSMutableArray *)params {
-  return [NSMutableArray arrayWithCapacity:1];
+  @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                 reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
+                               userInfo:nil];
 }
 
 - (NSString*)asString {

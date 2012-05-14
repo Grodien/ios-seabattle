@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBPlayField.h"
 
 @interface SBPlayer : NSObject
 
 @property (nonatomic) NSString* name;
+@property (nonatomic) SBPlayField *playField;
+
+- (id)initMySelf;
 
 @end

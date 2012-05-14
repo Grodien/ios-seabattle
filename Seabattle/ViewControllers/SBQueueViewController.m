@@ -8,6 +8,8 @@
 
 #import "SBQueueViewController.h"
 #import "SBNetworkConnection.h"
+#import "SBUpdateNameCommand.h"
+#import "SBGame.h"
 
 @interface SBQueueViewController ()
 
@@ -39,6 +41,7 @@
   [super viewDidLoad];
   
   [[SBNetworkConnection sharedInstance] connect];
+  [[SBNetworkConnection sharedInstance] sendCommand:[[SBUpdateNameCommand alloc] initWithName:[SBGame sharedInstance].me.name]];
   [activityIndicator startAnimating];
 }
 

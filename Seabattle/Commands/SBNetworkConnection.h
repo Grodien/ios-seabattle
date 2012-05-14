@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SBPlayerCommand.h"
 
 #define PARAM_SEPERATOR @"\t"
 #define LINE_BREAK @"\n"
@@ -25,5 +26,6 @@
 - (void)disconnect;
 - (void)subscribeMessageReceived: (id) obj withSelector: (SEL) selector;
 - (void)unsubscribeMessageReceived: (id) obj withSelector: (SEL) selector;
+- (void)sendCommand:(SBPlayerCommand*)cmd;
 
 @end

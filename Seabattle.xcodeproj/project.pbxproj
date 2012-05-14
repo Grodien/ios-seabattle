@@ -36,6 +36,12 @@
 		56DE077D15612A02006DD960 /* SBPlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077915612A02006DD960 /* SBPlayerCommand.m */; };
 		56DE077E15612A02006DD960 /* SBUpdateNameCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */; };
 		56DE077F15612A02006DD960 /* SBUpdateNameCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */; };
+		56DE078215612F6F006DD960 /* SBServerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078115612F6F006DD960 /* SBServerCommand.m */; };
+		56DE078315612F6F006DD960 /* SBServerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078115612F6F006DD960 /* SBServerCommand.m */; };
+		56DE078615613151006DD960 /* SBServerSettingsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078515613151006DD960 /* SBServerSettingsCommand.m */; };
+		56DE078715613151006DD960 /* SBServerSettingsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078515613151006DD960 /* SBServerSettingsCommand.m */; };
+		56DE078B1561745D006DD960 /* SBPlayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078A1561745D006DD960 /* SBPlayField.m */; };
+		56DE078C1561745D006DD960 /* SBPlayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078A1561745D006DD960 /* SBPlayField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,13 @@
 		56DE077915612A02006DD960 /* SBPlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayerCommand.m; path = Commands/SBPlayerCommand.m; sourceTree = "<group>"; };
 		56DE077A15612A02006DD960 /* SBUpdateNameCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUpdateNameCommand.h; path = Commands/SBUpdateNameCommand.h; sourceTree = "<group>"; };
 		56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBUpdateNameCommand.m; path = Commands/SBUpdateNameCommand.m; sourceTree = "<group>"; };
+		56DE078015612F6F006DD960 /* SBServerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBServerCommand.h; path = Commands/SBServerCommand.h; sourceTree = "<group>"; };
+		56DE078115612F6F006DD960 /* SBServerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBServerCommand.m; path = Commands/SBServerCommand.m; sourceTree = "<group>"; };
+		56DE078415613151006DD960 /* SBServerSettingsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBServerSettingsCommand.h; path = Commands/SBServerSettingsCommand.h; sourceTree = "<group>"; };
+		56DE078515613151006DD960 /* SBServerSettingsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBServerSettingsCommand.m; path = Commands/SBServerSettingsCommand.m; sourceTree = "<group>"; };
+		56DE0788156133BB006DD960 /* SBAllCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAllCommands.h; sourceTree = "<group>"; };
+		56DE07891561745D006DD960 /* SBPlayField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPlayField.h; path = Models/SBPlayField.h; sourceTree = "<group>"; };
+		56DE078A1561745D006DD960 /* SBPlayField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayField.m; path = Models/SBPlayField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +204,11 @@
 				56DE07631561200A006DD960 /* SBCommand.h */,
 				56DE07641561200A006DD960 /* SBNetworkConnection.h */,
 				56DE07651561200A006DD960 /* SBNetworkConnection.m */,
+				56DE078015612F6F006DD960 /* SBServerCommand.h */,
+				56DE078115612F6F006DD960 /* SBServerCommand.m */,
+				56DE078415613151006DD960 /* SBServerSettingsCommand.h */,
+				56DE078515613151006DD960 /* SBServerSettingsCommand.m */,
+				56DE0788156133BB006DD960 /* SBAllCommands.h */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -215,6 +233,8 @@
 				56DE0775156129F6006DD960 /* SBGame.m */,
 				56DE075F15612000006DD960 /* SBPlayer.h */,
 				56DE076015612000006DD960 /* SBPlayer.m */,
+				56DE07891561745D006DD960 /* SBPlayField.h */,
+				56DE078A1561745D006DD960 /* SBPlayField.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -338,6 +358,9 @@
 				56DE0776156129F6006DD960 /* SBGame.m in Sources */,
 				56DE077C15612A02006DD960 /* SBPlayerCommand.m in Sources */,
 				56DE077E15612A02006DD960 /* SBUpdateNameCommand.m in Sources */,
+				56DE078215612F6F006DD960 /* SBServerCommand.m in Sources */,
+				56DE078615613151006DD960 /* SBServerSettingsCommand.m in Sources */,
+				56DE078B1561745D006DD960 /* SBPlayField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +376,9 @@
 				56DE0777156129F6006DD960 /* SBGame.m in Sources */,
 				56DE077D15612A02006DD960 /* SBPlayerCommand.m in Sources */,
 				56DE077F15612A02006DD960 /* SBUpdateNameCommand.m in Sources */,
+				56DE078315612F6F006DD960 /* SBServerCommand.m in Sources */,
+				56DE078715613151006DD960 /* SBServerSettingsCommand.m in Sources */,
+				56DE078C1561745D006DD960 /* SBPlayField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

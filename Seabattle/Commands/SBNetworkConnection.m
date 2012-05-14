@@ -7,6 +7,7 @@
 //
 
 #import "SBNetworkConnection.h"
+#import "SBAllCommands.h"
 
 #define HOSTADRESS @"10.0.0.7"
 #define HOSTPORT 8222
@@ -96,17 +97,35 @@ static SBNetworkConnection *sharedInstance = nil;
             
             while ((range = [messageBuffer rangeOfString:LINE_BREAK]).location != NSNotFound) {
               NSString* message = [messageBuffer substringToIndex:range.location];
-              
               messageBuffer = [NSMutableString stringWithString:[messageBuffer substringFromIndex:range.location + 1]];
+              
+              NSLog(@"Server said: %@", message);
+              
+              NSArray* cmd = [message componentsSeparatedByString:PARAM_SEPERATOR];
+              
+              SBServerCommand *command;
+              
+              switch ((ServerCommand)[[cmd objectAtIndex:0] intValue]) {
+                case PartialUpdate:
+                  break;
+                case FullUpdate:
+                  break;
+                case PlayerReady:
+                  break;
+                case ServerSettings: 
+                  command = [[SBServerSettingsCommand alloc] initWithParams:cmd];
+                case Error:
+                  break;
+                default:
+                  break;
+              }
               	
-              if (nil != message) {
+              if (nil != command) {
                 for (NSInteger i = 0; i < [messageReceivedCallbackTargets count]; i++) {
                   SEL selector = [[messageReceivedCallbackSelectors objectAtIndex: i] pointerValue];
                   id target = [messageReceivedCallbackTargets objectAtIndex: i];
-                  [target performSelector: selector withObject:message];
+                  [target performSelector: selector withObject:command];
                 }  
-                
-                NSLog(@"Server said: %@", message);
               }
             }
           }
@@ -149,4 +168,8 @@ static SBNetworkConnection *sharedInstance = nil;
   }
 }
 
+- (void)sendCommand:(SBPlayerCommand *)cmd {
+	NSData *data = [[NSData alloc] initWithData:[[cmd asString] dataUsingEncoding:NSASCIIStringEncoding]];
+	[outputStream write:[data bytes] maxLength:[data length]];
+}
 @end
