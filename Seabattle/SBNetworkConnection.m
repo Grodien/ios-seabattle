@@ -8,8 +8,9 @@
 
 #import "SBNetworkConnection.h"
 
-#define HOSTADRESS @"10.3.112.235"
+#define HOSTADRESS @"10.0.0.7"
 #define HOSTPORT 8222
+
 
 @implementation SBNetworkConnection
 
@@ -18,6 +19,7 @@
 @synthesize connected;
 @synthesize messageReceivedCallbackSelectors;
 @synthesize messageReceivedCallbackTargets;
+@synthesize messageBuffer;
 
 static SBNetworkConnection *sharedInstance = nil;
 
@@ -35,6 +37,7 @@ static SBNetworkConnection *sharedInstance = nil;
     inputStream = nil;
     outputStream = nil;
     connected = NO;
+    messageBuffer = [NSMutableString stringWithCapacity:50];
   }
   
   return self;
@@ -71,6 +74,37 @@ static SBNetworkConnection *sharedInstance = nil;
 			break;
       
 		case NSStreamEventHasBytesAvailable:
+      if (theStream == inputStream) {
+        
+        uint8_t buffer[1024];
+        int len;
+        
+        while ([inputStream hasBytesAvailable]) {
+          len = [inputStream read:buffer maxLength:sizeof(buffer)];
+          if (len > 0) {
+            
+            [messageBuffer appendString:[[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding]];
+            
+            NSRange range;
+            
+            while ((range = [messageBuffer rangeOfString:LINE_BREAK]).location != NSNotFound) {
+              NSString* message = [messageBuffer substringToIndex:range.location];
+              
+              messageBuffer = (NSMutableString*)[messageBuffer substringFromIndex:range.location + 1];
+              	
+              if (nil != message) {
+                for (NSInteger i = 0; i < [messageReceivedCallbackTargets count]; i++) {
+                  SEL selector = [[messageReceivedCallbackSelectors objectAtIndex: i] pointerValue];
+                  id target = [messageReceivedCallbackTargets objectAtIndex: i];
+                  [target performSelector: selector withObject:message];
+                }  
+                
+                NSLog(@"Server said: %@", message);
+              }
+            }
+          }
+        }
+      }
 			break;			
       
 		case NSStreamEventErrorOccurred:   
@@ -82,7 +116,12 @@ static SBNetworkConnection *sharedInstance = nil;
 			break;
       
 		default:
-			NSLog(@"Unknown event");
+      if ([inputStream hasBytesAvailable]) {
+        NSLog(@"Unknown event with data");
+      } else {
+        NSLog(@"Unknown event");
+      }
+			
 	}
   
 }

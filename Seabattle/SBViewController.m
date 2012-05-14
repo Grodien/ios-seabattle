@@ -7,6 +7,7 @@
 //
 
 #import "SBViewController.h"
+#import "SBNetworkConnection.h"
 
 @interface SBViewController ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -32,5 +33,7 @@
 }
 
 - (IBAction)buttonOnlineBattlePressed:(UIButton *)sender {
+  
+  [[SBNetworkConnection sharedInstance] connect];
 }
 @end
