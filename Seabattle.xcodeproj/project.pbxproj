@@ -13,15 +13,23 @@
 		56ADA51415510F0B0071461C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56ADA51215510F0B0071461C /* InfoPlist.strings */; };
 		56ADA51615510F0B0071461C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA51515510F0B0071461C /* main.m */; };
 		56ADA51A15510F0B0071461C /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA51915510F0B0071461C /* SBAppDelegate.m */; };
-		56ADA51D15510F0B0071461C /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA51C15510F0B0071461C /* SBViewController.m */; };
-		56ADA52015510F0B0071461C /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56ADA51E15510F0B0071461C /* SBViewController.xib */; };
 		56ADA52815510F0C0071461C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA52715510F0C0071461C /* SenTestingKit.framework */; };
 		56ADA52915510F0C0071461C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50915510F0B0071461C /* UIKit.framework */; };
 		56ADA52A15510F0C0071461C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50B15510F0B0071461C /* Foundation.framework */; };
 		56ADA53215510F0C0071461C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56ADA53015510F0C0071461C /* InfoPlist.strings */; };
 		56ADA53515510F0C0071461C /* SeabattleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA53415510F0C0071461C /* SeabattleTests.m */; };
-		56DE073615610913006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE073515610913006DD960 /* SBNetworkConnection.m */; };
-		56DE073715610913006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE073515610913006DD960 /* SBNetworkConnection.m */; };
+		56DE075715611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
+		56DE075815611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
+		56DE075915611FF4006DD960 /* SBQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075315611FF4006DD960 /* SBQueueViewController.xib */; };
+		56DE075A15611FF4006DD960 /* SBQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075315611FF4006DD960 /* SBQueueViewController.xib */; };
+		56DE075B15611FF4006DD960 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075515611FF4006DD960 /* SBViewController.m */; };
+		56DE075C15611FF4006DD960 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075515611FF4006DD960 /* SBViewController.m */; };
+		56DE075D15611FF4006DD960 /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075615611FF4006DD960 /* SBViewController.xib */; };
+		56DE075E15611FF4006DD960 /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075615611FF4006DD960 /* SBViewController.xib */; };
+		56DE076115612000006DD960 /* SBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE076015612000006DD960 /* SBPlayer.m */; };
+		56DE076215612000006DD960 /* SBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE076015612000006DD960 /* SBPlayer.m */; };
+		56DE07661561200A006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE07651561200A006DD960 /* SBNetworkConnection.m */; };
+		56DE07671561200A006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE07651561200A006DD960 /* SBNetworkConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,17 +53,23 @@
 		56ADA51715510F0B0071461C /* Seabattle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Seabattle-Prefix.pch"; sourceTree = "<group>"; };
 		56ADA51815510F0B0071461C /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
 		56ADA51915510F0B0071461C /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
-		56ADA51B15510F0B0071461C /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
-		56ADA51C15510F0B0071461C /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
-		56ADA51F15510F0B0071461C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SBViewController.xib; sourceTree = "<group>"; };
 		56ADA52615510F0C0071461C /* SeabattleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeabattleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56ADA52715510F0C0071461C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		56ADA52F15510F0C0071461C /* SeabattleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SeabattleTests-Info.plist"; sourceTree = "<group>"; };
 		56ADA53115510F0C0071461C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56ADA53315510F0C0071461C /* SeabattleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeabattleTests.h; sourceTree = "<group>"; };
 		56ADA53415510F0C0071461C /* SeabattleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeabattleTests.m; sourceTree = "<group>"; };
-		56DE073415610913006DD960 /* SBNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNetworkConnection.h; sourceTree = "<group>"; };
-		56DE073515610913006DD960 /* SBNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBNetworkConnection.m; sourceTree = "<group>"; };
+		56DE075115611FF4006DD960 /* SBQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBQueueViewController.h; path = ViewControllers/SBQueueViewController.h; sourceTree = "<group>"; };
+		56DE075215611FF4006DD960 /* SBQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBQueueViewController.m; path = ViewControllers/SBQueueViewController.m; sourceTree = "<group>"; };
+		56DE075315611FF4006DD960 /* SBQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBQueueViewController.xib; path = ViewControllers/SBQueueViewController.xib; sourceTree = "<group>"; };
+		56DE075415611FF4006DD960 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBViewController.h; path = ViewControllers/SBViewController.h; sourceTree = "<group>"; };
+		56DE075515611FF4006DD960 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBViewController.m; path = ViewControllers/SBViewController.m; sourceTree = "<group>"; };
+		56DE075615611FF4006DD960 /* SBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBViewController.xib; path = ViewControllers/SBViewController.xib; sourceTree = "<group>"; };
+		56DE075F15612000006DD960 /* SBPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPlayer.h; path = Models/SBPlayer.h; sourceTree = "<group>"; };
+		56DE076015612000006DD960 /* SBPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayer.m; path = Models/SBPlayer.m; sourceTree = "<group>"; };
+		56DE07631561200A006DD960 /* SBCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCommand.h; path = Commands/SBCommand.h; sourceTree = "<group>"; };
+		56DE07641561200A006DD960 /* SBNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNetworkConnection.h; path = Commands/SBNetworkConnection.h; sourceTree = "<group>"; };
+		56DE07651561200A006DD960 /* SBNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBNetworkConnection.m; path = Commands/SBNetworkConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +129,12 @@
 		56ADA50F15510F0B0071461C /* Seabattle */ = {
 			isa = PBXGroup;
 			children = (
+				56DE075015611F5A006DD960 /* Models */,
+				56DE074F15611F36006DD960 /* ViewController */,
 				56DE073915610E77006DD960 /* Commands */,
 				56ADA51815510F0B0071461C /* SBAppDelegate.h */,
 				56ADA51915510F0B0071461C /* SBAppDelegate.m */,
-				56ADA51B15510F0B0071461C /* SBViewController.h */,
-				56ADA51C15510F0B0071461C /* SBViewController.m */,
-				56ADA51E15510F0B0071461C /* SBViewController.xib */,
 				56ADA51015510F0B0071461C /* Supporting Files */,
-				56DE073415610913006DD960 /* SBNetworkConnection.h */,
-				56DE073515610913006DD960 /* SBNetworkConnection.m */,
 			);
 			path = Seabattle;
 			sourceTree = "<group>";
@@ -161,8 +172,33 @@
 		56DE073915610E77006DD960 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				56DE07631561200A006DD960 /* SBCommand.h */,
+				56DE07641561200A006DD960 /* SBNetworkConnection.h */,
+				56DE07651561200A006DD960 /* SBNetworkConnection.m */,
 			);
 			name = Commands;
+			sourceTree = "<group>";
+		};
+		56DE074F15611F36006DD960 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56DE075115611FF4006DD960 /* SBQueueViewController.h */,
+				56DE075215611FF4006DD960 /* SBQueueViewController.m */,
+				56DE075315611FF4006DD960 /* SBQueueViewController.xib */,
+				56DE075415611FF4006DD960 /* SBViewController.h */,
+				56DE075515611FF4006DD960 /* SBViewController.m */,
+				56DE075615611FF4006DD960 /* SBViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		56DE075015611F5A006DD960 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56DE075F15612000006DD960 /* SBPlayer.h */,
+				56DE076015612000006DD960 /* SBPlayer.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56ADA51415510F0B0071461C /* InfoPlist.strings in Resources */,
-				56ADA52015510F0B0071461C /* SBViewController.xib in Resources */,
+				56DE075915611FF4006DD960 /* SBQueueViewController.xib in Resources */,
+				56DE075D15611FF4006DD960 /* SBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56ADA53215510F0C0071461C /* InfoPlist.strings in Resources */,
+				56DE075A15611FF4006DD960 /* SBQueueViewController.xib in Resources */,
+				56DE075E15611FF4006DD960 /* SBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +313,10 @@
 			files = (
 				56ADA51615510F0B0071461C /* main.m in Sources */,
 				56ADA51A15510F0B0071461C /* SBAppDelegate.m in Sources */,
-				56ADA51D15510F0B0071461C /* SBViewController.m in Sources */,
-				56DE073615610913006DD960 /* SBNetworkConnection.m in Sources */,
+				56DE075715611FF4006DD960 /* SBQueueViewController.m in Sources */,
+				56DE075B15611FF4006DD960 /* SBViewController.m in Sources */,
+				56DE076115612000006DD960 /* SBPlayer.m in Sources */,
+				56DE07661561200A006DD960 /* SBNetworkConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56ADA53515510F0C0071461C /* SeabattleTests.m in Sources */,
-				56DE073715610913006DD960 /* SBNetworkConnection.m in Sources */,
+				56DE075815611FF4006DD960 /* SBQueueViewController.m in Sources */,
+				56DE075C15611FF4006DD960 /* SBViewController.m in Sources */,
+				56DE076215612000006DD960 /* SBPlayer.m in Sources */,
+				56DE07671561200A006DD960 /* SBNetworkConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +349,6 @@
 				56ADA51315510F0B0071461C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		56ADA51E15510F0B0071461C /* SBViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56ADA51F15510F0B0071461C /* en */,
-			);
-			name = SBViewController.xib;
 			sourceTree = "<group>";
 		};
 		56ADA53015510F0C0071461C /* InfoPlist.strings */ = {
