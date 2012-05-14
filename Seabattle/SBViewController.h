@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SBOnlineBattleViewController.h"
 
 @interface SBViewController : UIViewController
 

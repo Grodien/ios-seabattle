@@ -20,7 +20,8 @@
 		56ADA52A15510F0C0071461C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50B15510F0B0071461C /* Foundation.framework */; };
 		56ADA53215510F0C0071461C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56ADA53015510F0C0071461C /* InfoPlist.strings */; };
 		56ADA53515510F0C0071461C /* SeabattleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA53415510F0C0071461C /* SeabattleTests.m */; };
-		7482D07615511F5900EB8CE6 /* SBOnlineBattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7482D07515511F5900EB8CE6 /* SBOnlineBattleViewController.m */; };
+		56DE073615610913006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE073515610913006DD960 /* SBNetworkConnection.m */; };
+		56DE073715610913006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE073515610913006DD960 /* SBNetworkConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,8 @@
 		56ADA53115510F0C0071461C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56ADA53315510F0C0071461C /* SeabattleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeabattleTests.h; sourceTree = "<group>"; };
 		56ADA53415510F0C0071461C /* SeabattleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeabattleTests.m; sourceTree = "<group>"; };
-		7482D07415511F5900EB8CE6 /* SBOnlineBattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBOnlineBattleViewController.h; sourceTree = "<group>"; };
-		7482D07515511F5900EB8CE6 /* SBOnlineBattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBOnlineBattleViewController.m; sourceTree = "<group>"; };
+		56DE073415610913006DD960 /* SBNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNetworkConnection.h; sourceTree = "<group>"; };
+		56DE073515610913006DD960 /* SBNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBNetworkConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +115,15 @@
 		56ADA50F15510F0B0071461C /* Seabattle */ = {
 			isa = PBXGroup;
 			children = (
+				56DE073915610E77006DD960 /* Commands */,
 				56ADA51815510F0B0071461C /* SBAppDelegate.h */,
 				56ADA51915510F0B0071461C /* SBAppDelegate.m */,
 				56ADA51B15510F0B0071461C /* SBViewController.h */,
 				56ADA51C15510F0B0071461C /* SBViewController.m */,
 				56ADA51E15510F0B0071461C /* SBViewController.xib */,
 				56ADA51015510F0B0071461C /* Supporting Files */,
-				7482D07415511F5900EB8CE6 /* SBOnlineBattleViewController.h */,
-				7482D07515511F5900EB8CE6 /* SBOnlineBattleViewController.m */,
+				56DE073415610913006DD960 /* SBNetworkConnection.h */,
+				56DE073515610913006DD960 /* SBNetworkConnection.m */,
 			);
 			path = Seabattle;
 			sourceTree = "<group>";
@@ -154,6 +156,13 @@
 				56ADA53015510F0C0071461C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56DE073915610E77006DD960 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +275,7 @@
 				56ADA51615510F0B0071461C /* main.m in Sources */,
 				56ADA51A15510F0B0071461C /* SBAppDelegate.m in Sources */,
 				56ADA51D15510F0B0071461C /* SBViewController.m in Sources */,
-				7482D07615511F5900EB8CE6 /* SBOnlineBattleViewController.m in Sources */,
+				56DE073615610913006DD960 /* SBNetworkConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56ADA53515510F0C0071461C /* SeabattleTests.m in Sources */,
+				56DE073715610913006DD960 /* SBNetworkConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

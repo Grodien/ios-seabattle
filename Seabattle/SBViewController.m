@@ -32,9 +32,5 @@
 }
 
 - (IBAction)buttonOnlineBattlePressed:(UIButton *)sender {
-    
-    SBOnlineBattleViewController *view = [[SBOnlineBattleViewController alloc] init];
-    
-    [self presentModalViewController:view animated:YES];
 }
 @end
