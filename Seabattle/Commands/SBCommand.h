@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 typedef enum {
   PartialUpdate,
   FullUpdate,
@@ -21,5 +19,6 @@ typedef enum {
   GetServerSettings,
   Ready,
   UpdateName,
-  RenewGameField
+  RenewGameField,
+  Disconncet
 }PlayerCommand;

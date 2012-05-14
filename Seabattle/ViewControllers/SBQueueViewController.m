@@ -7,12 +7,15 @@
 //
 
 #import "SBQueueViewController.h"
+#import "SBNetworkConnection.h"
 
 @interface SBQueueViewController ()
 
 @end
 
 @implementation SBQueueViewController
+@synthesize statusLabel;
+@synthesize activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,22 +26,40 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  [[SBNetworkConnection sharedInstance] subscribeMessageReceived:self withSelector:@selector(onMessageReceived:)];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+  [[SBNetworkConnection sharedInstance] unsubscribeMessageReceived:self withSelector:@selector(onMessageReceived:)];
+}
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  
+  [[SBNetworkConnection sharedInstance] connect];
+  [activityIndicator startAnimating];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [self setActivityIndicator:nil];
+  [self setStatusLabel:nil];
+  [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+  return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)onMessageReceived:(id)command {
+  
+}
+
+- (IBAction)onCancelClick:(UIButton *)sender {
+  [[SBNetworkConnection sharedInstance] disconnect];
+  [self dismissModalViewControllerAnimated:YES];
+}
 @end

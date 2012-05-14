@@ -22,6 +22,7 @@
 
 + (SBNetworkConnection*)sharedInstance;
 - (void)connect;
+- (void)disconnect;
 - (void)subscribeMessageReceived: (id) obj withSelector: (SEL) selector;
 - (void)unsubscribeMessageReceived: (id) obj withSelector: (SEL) selector;
 

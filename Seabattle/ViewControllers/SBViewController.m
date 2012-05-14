@@ -7,6 +7,7 @@
 //
 
 #import "SBViewController.h"
+#import "SBQueueViewController.h"
 #import "SBNetworkConnection.h"
 
 @interface SBViewController ()
@@ -33,7 +34,10 @@
 }
 
 - (IBAction)buttonOnlineBattlePressed:(UIButton *)sender {
+  SBQueueViewController *queueView = [[SBQueueViewController alloc] init];
+  queueView.modalPresentationStyle = UIModalPresentationFullScreen;
+  queueView.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
   
-  [[SBNetworkConnection sharedInstance] connect];
+  [self presentModalViewController:queueView animated:YES];
 }
 @end

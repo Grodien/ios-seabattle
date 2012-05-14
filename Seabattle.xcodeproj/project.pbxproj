@@ -30,6 +30,12 @@
 		56DE076215612000006DD960 /* SBPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE076015612000006DD960 /* SBPlayer.m */; };
 		56DE07661561200A006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE07651561200A006DD960 /* SBNetworkConnection.m */; };
 		56DE07671561200A006DD960 /* SBNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE07651561200A006DD960 /* SBNetworkConnection.m */; };
+		56DE0776156129F6006DD960 /* SBGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE0775156129F6006DD960 /* SBGame.m */; };
+		56DE0777156129F6006DD960 /* SBGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE0775156129F6006DD960 /* SBGame.m */; };
+		56DE077C15612A02006DD960 /* SBPlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077915612A02006DD960 /* SBPlayerCommand.m */; };
+		56DE077D15612A02006DD960 /* SBPlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077915612A02006DD960 /* SBPlayerCommand.m */; };
+		56DE077E15612A02006DD960 /* SBUpdateNameCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */; };
+		56DE077F15612A02006DD960 /* SBUpdateNameCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,12 @@
 		56DE07631561200A006DD960 /* SBCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBCommand.h; path = Commands/SBCommand.h; sourceTree = "<group>"; };
 		56DE07641561200A006DD960 /* SBNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNetworkConnection.h; path = Commands/SBNetworkConnection.h; sourceTree = "<group>"; };
 		56DE07651561200A006DD960 /* SBNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBNetworkConnection.m; path = Commands/SBNetworkConnection.m; sourceTree = "<group>"; };
+		56DE0774156129F6006DD960 /* SBGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGame.h; path = Models/SBGame.h; sourceTree = "<group>"; };
+		56DE0775156129F6006DD960 /* SBGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGame.m; path = Models/SBGame.m; sourceTree = "<group>"; };
+		56DE077815612A02006DD960 /* SBPlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPlayerCommand.h; path = Commands/SBPlayerCommand.h; sourceTree = "<group>"; };
+		56DE077915612A02006DD960 /* SBPlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayerCommand.m; path = Commands/SBPlayerCommand.m; sourceTree = "<group>"; };
+		56DE077A15612A02006DD960 /* SBUpdateNameCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBUpdateNameCommand.h; path = Commands/SBUpdateNameCommand.h; sourceTree = "<group>"; };
+		56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBUpdateNameCommand.m; path = Commands/SBUpdateNameCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +184,10 @@
 		56DE073915610E77006DD960 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				56DE077815612A02006DD960 /* SBPlayerCommand.h */,
+				56DE077915612A02006DD960 /* SBPlayerCommand.m */,
+				56DE077A15612A02006DD960 /* SBUpdateNameCommand.h */,
+				56DE077B15612A02006DD960 /* SBUpdateNameCommand.m */,
 				56DE07631561200A006DD960 /* SBCommand.h */,
 				56DE07641561200A006DD960 /* SBNetworkConnection.h */,
 				56DE07651561200A006DD960 /* SBNetworkConnection.m */,
@@ -195,6 +211,8 @@
 		56DE075015611F5A006DD960 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				56DE0774156129F6006DD960 /* SBGame.h */,
+				56DE0775156129F6006DD960 /* SBGame.m */,
 				56DE075F15612000006DD960 /* SBPlayer.h */,
 				56DE076015612000006DD960 /* SBPlayer.m */,
 			);
@@ -317,6 +335,9 @@
 				56DE075B15611FF4006DD960 /* SBViewController.m in Sources */,
 				56DE076115612000006DD960 /* SBPlayer.m in Sources */,
 				56DE07661561200A006DD960 /* SBNetworkConnection.m in Sources */,
+				56DE0776156129F6006DD960 /* SBGame.m in Sources */,
+				56DE077C15612A02006DD960 /* SBPlayerCommand.m in Sources */,
+				56DE077E15612A02006DD960 /* SBUpdateNameCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +350,9 @@
 				56DE075C15611FF4006DD960 /* SBViewController.m in Sources */,
 				56DE076215612000006DD960 /* SBPlayer.m in Sources */,
 				56DE07671561200A006DD960 /* SBNetworkConnection.m in Sources */,
+				56DE0777156129F6006DD960 /* SBGame.m in Sources */,
+				56DE077D15612A02006DD960 /* SBPlayerCommand.m in Sources */,
+				56DE077F15612A02006DD960 /* SBUpdateNameCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

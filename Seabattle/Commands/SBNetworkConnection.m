@@ -67,6 +67,10 @@ static SBNetworkConnection *sharedInstance = nil;
   [outputStream open];
 }
 
+- (void)disconnect {
+  
+}
+
 - (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent {
   
 	switch (streamEvent) {
