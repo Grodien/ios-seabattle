@@ -13,9 +13,28 @@
 
 @synthesize fieldData;
 
+- (id)init {
+  if (self = [super init]) {
+    
+    int size = [SBGame size];
+    
+    fieldData = [NSMutableArray arrayWithCapacity:size];
+    
+    for (int i = 0; i < size; i++) {
+      NSMutableArray *row = [NSMutableArray arrayWithCapacity:size];
+      for (int j = 0; j < size; j++) {
+        [row addObject:[NSNumber numberWithInt:VALUE_FREE]];
+      }
+      [fieldData addObject:row];
+    }
+  }
+  
+  return self;
+}
+
 - (id)initWithString:(NSString*)data {
   if (self = [super init]) {
-    int size = [SBGame sharedInstance].size;
+    int size = [SBGame size];
     
     fieldData = [NSMutableArray arrayWithCapacity:size];
     

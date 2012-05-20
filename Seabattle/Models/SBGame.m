@@ -12,9 +12,9 @@
 
 @synthesize me;
 @synthesize enemy;
-@synthesize size;
 
 static SBGame *sharedInstance = nil;
+static int size = 10;
 
 + (SBGame *)sharedInstance {
   if (sharedInstance == nil) {
@@ -38,5 +38,11 @@ static SBGame *sharedInstance = nil;
   return [self sharedInstance];
 }
 
++ (int)size {
+  return size;
+}
 
++ (void)size:(int)s {
+  size = s;
+}
 @end

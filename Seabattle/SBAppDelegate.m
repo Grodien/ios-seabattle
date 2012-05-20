@@ -9,6 +9,8 @@
 #import "SBAppDelegate.h"
 
 #import "SBViewController.h"
+#import "SBQueueViewController.h"
+#import "SBGameSetupViewController.h"
 
 @implementation SBAppDelegate
 
@@ -50,6 +52,33 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)showMainWindow {
+  [self.viewController dismissModalViewControllerAnimated:YES];
+}
+
+- (void)showQueueWindow {
+  SBQueueViewController *view = [[SBQueueViewController alloc] init];
+  view.modalPresentationStyle = UIModalPresentationFullScreen;
+  view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  
+  [self.viewController dismissModalViewControllerAnimated:NO];
+  [self.viewController presentModalViewController:view animated:YES];
+  
+}
+
+- (void)showGameSetupWindow {
+  SBGameSetupViewController *view = [[SBGameSetupViewController alloc] init];  
+  view.modalPresentationStyle = UIModalPresentationFullScreen;
+  view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  
+  [self.viewController dismissModalViewControllerAnimated:NO];
+  [self.viewController presentModalViewController:view animated:YES];
+}
+
+- (void)showGameWindow {
+  
 }
 
 @end

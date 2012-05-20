@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #define VALUE_FREE 0
-#define VALUE_SHIP = 1
-#define VALUE_FREE_HIT = 2
-#define VALUE_SHIP_HIT = 3
+#define VALUE_SHIP 1
+#define VALUE_FREE_HIT 2
+#define VALUE_SHIP_HIT 3
 
 @interface SBPlayField : NSObject
 
