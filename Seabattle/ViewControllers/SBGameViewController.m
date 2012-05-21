@@ -12,6 +12,7 @@
 #import "SBGameFieldView.h"
 #import "SBGame.h"
 #import "SBAppDelegate.h"
+#import "QuartzCore/QuartzCore.h"
 
 @interface SBGameViewController ()
 
@@ -79,7 +80,10 @@
   } else if (command.command == Win) {
     SBWinCommand *cmd = (SBWinCommand*)command;
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor whiteColor];
+    [btn.layer setBorderWidth:1];
+    [btn.layer setBorderColor:[UIColor blackColor].CGColor];
     btn.frame = self.statusLabel.frame;
     self.statusLabel.hidden = YES;
     [btn setTitle:@"Exit" forState:UIControlStateNormal];
@@ -113,11 +117,15 @@
   self.myGameField = [[SBGameFieldView alloc] initWithFrame:CGRectMake(220, 0, 100, 100)];
   self.myGameField.gameField = [SBGame sharedInstance].me.playField;
   self.myGameField.hideShips = NO;
+  [self.myGameField.layer setBorderWidth:1.0f];
+  [self.myGameField.layer setBorderColor:[UIColor blackColor].CGColor];
   [self.view addSubview:myGameField];
   
   self.enemyGameField = [[SBGameFieldView alloc] initWithFrame:CGRectMake(0, 100, 320, 320)];
   self.enemyGameField.gameField = [SBGame sharedInstance].enemy.playField;
-  self.enemyGameField.hideShips = YES;
+  self.enemyGameField.hideShips = YES;  
+  [self.enemyGameField.layer setBorderWidth:1.0f];
+  [self.enemyGameField.layer setBorderColor:[UIColor blackColor].CGColor];
   [self.view addSubview:enemyGameField];
   
   [self updateStatusLabel];
