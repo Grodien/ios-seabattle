@@ -46,6 +46,7 @@
       if (fieldValue == VALUE_FREE) {
         CGContextStrokeRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
       } else if (fieldValue == VALUE_FREE_HIT) {
+        CGContextStrokeRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
         CGContextSetRGBFillColor(contextRef, 0, 0, 255, 1);
         CGContextFillRect(contextRef, CGRectMake(j*fieldLength+2, i*fieldLength+2, fieldLength-4, fieldLength-4));
         CGContextSetRGBFillColor(contextRef, 0, 0, 0, 1);

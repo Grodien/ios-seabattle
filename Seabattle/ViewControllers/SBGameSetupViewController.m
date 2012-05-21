@@ -98,6 +98,8 @@
     if (cmd.errorCode == ERROR_CODE_PLAYER_DISCONNECT) {
       [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:@"Player Disconnected. The Game will end now!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     }
+  } else if (command.command == PlayerFound) {
+    [SBGame sharedInstance].enemy.name = ((SBPlayerFound*)command).playerName;
   }
 }
 
