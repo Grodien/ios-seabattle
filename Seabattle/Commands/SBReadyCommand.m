@@ -27,7 +27,7 @@
 }
 
 - (NSMutableArray*)params {
-  return [NSMutableArray arrayWithObject:[NSString stringWithFormat:@"%d", ready]];
+  return [NSMutableArray arrayWithObject:[NSString stringWithFormat:@"%d", [[NSNumber numberWithBool:ready] intValue]]];
 }
 
 @end

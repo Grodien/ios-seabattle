@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) SBPlayer* me;
 @property (strong, nonatomic) SBPlayer* enemy;
+@property (nonatomic) bool myTurn;
 
 + (SBGame *)sharedInstance;
 + (int)size;

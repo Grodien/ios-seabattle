@@ -40,9 +40,12 @@
   [super viewDidLoad];
   
   self.gameFieldView = [[SBGameFieldView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
-  self.gameFieldView.visible = YES;
+  self.gameFieldView.hideShips = NO;
   self.gameFieldView.gameField = [SBGame sharedInstance].me.playField;
   [self.view addSubview:self.gameFieldView];
+  
+  self.enemyLabel.text = [NSString stringWithFormat:@"Enemy: %@", [SBGame sharedInstance].enemy.name];
+  
   [self drawPlayField];
 }
 
@@ -67,15 +70,24 @@
 - (void)onMessageReceived:(SBServerCommand*)command {
   if (command.command == PlayerReady) {
     SBGame *game = [SBGame sharedInstance];
-    game.enemy.ready = ((SBPlayerReadyCommand*)command).ready;
+    SBPlayerReadyCommand *cmd = (SBPlayerReadyCommand*)command;
+    game.enemy.ready = cmd.ready;
     
     if (game.enemy.ready) {
-      enemyLabel.text = @"Ready";
-      enemyLabel.textColor = [UIColor greenColor];
+      enemyReadyStateLabel.text = @"Ready";
+      enemyReadyStateLabel.textColor = [UIColor greenColor];
     } else {
-      enemyLabel.text = @"Not Ready";
-      enemyLabel.textColor = [UIColor redColor];
+      enemyReadyStateLabel.text = @"Not Ready";
+      enemyReadyStateLabel.textColor = [UIColor redColor];
     }
+    
+    if (cmd.startGame) {
+      [SBGame sharedInstance].myTurn = cmd.myTurn;
+      
+      SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
+      [delegate showGameWindow];
+    }    
+    
   } else if (command.command == FullUpdate) {
     SBPlayField *field = [[SBPlayField alloc] initWithString:((SBFullUpdateCommand*)command).fieldData];
     [SBGame sharedInstance].me.playField = field;
@@ -90,7 +102,6 @@
 }
 
 - (void)drawPlayField {
-  [gameFieldView setNeedsLayout];
   [self.gameFieldView setNeedsLayout];
   [self.gameFieldView setNeedsDisplay];
 }
@@ -106,6 +117,12 @@
   
   SBReadyCommand *cmd = [[SBReadyCommand alloc] initWithReadyState:game.me.ready];
   [[SBNetworkConnection sharedInstance] sendCommand:cmd];
+  
+  if (game.me.ready) {
+    [sender setTitle:@"Unready" forState:UIControlStateNormal];
+  } else {
+    [sender setTitle:@"Ready" forState:UIControlStateNormal];
+  }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex; {

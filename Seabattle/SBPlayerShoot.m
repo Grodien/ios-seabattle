@@ -21,7 +21,7 @@
 }
 
 - (NSMutableArray*)params {
-  return [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:posX], [NSNumber numberWithInt:posY], nil];
+  return [NSMutableArray arrayWithObjects:[NSString stringWithFormat:@"%d", posX],[NSString stringWithFormat:@"%d", posY], nil];
 }
 
 @end

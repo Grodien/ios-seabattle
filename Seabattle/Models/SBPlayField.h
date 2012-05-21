@@ -19,4 +19,7 @@
 
 - (id)initWithString:(NSString*)data;
 - (int)valueOfColumn:(int)col row:(int)row;
+- (void)updateWithStringData:(NSString*)data;
+- (void)setValue:(int)Value posX:(int)posX posY:(int)posY;
+
 @end

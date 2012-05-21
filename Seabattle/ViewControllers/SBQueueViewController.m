@@ -67,8 +67,7 @@
     [SBGame size:((SBServerSettingsCommand*)command).SIZE];
   } else if (command.command == PlayerFound) {
     SBGame* game = [SBGame sharedInstance];
-    game.enemy = [[SBPlayer alloc] init];
-    game.enemy.name = ((SBPlayerFound*)command).playerName;
+    game.enemy = [[SBPlayer alloc] initWithName:((SBPlayerFound*)command).playerName];
     
     SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
     [delegate showGameSetupWindow];

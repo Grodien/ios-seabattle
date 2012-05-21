@@ -11,6 +11,8 @@
 #import "SBViewController.h"
 #import "SBQueueViewController.h"
 #import "SBGameSetupViewController.h"
+#import "SBGameViewController.h"
+#import "SBNetworkConnection.h"
 
 @implementation SBAppDelegate
 
@@ -56,6 +58,7 @@
 
 - (void)showMainWindow {
   [self.viewController dismissModalViewControllerAnimated:YES];
+  [[SBNetworkConnection sharedInstance] disconnect];
 }
 
 - (void)showQueueWindow {
@@ -79,6 +82,12 @@
 
 - (void)showGameWindow {
   
+  SBGameViewController *view = [[SBGameViewController alloc] init];  
+  view.modalPresentationStyle = UIModalPresentationFullScreen;
+  view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+  
+  [self.viewController dismissModalViewControllerAnimated:NO];
+  [self.viewController presentModalViewController:view animated:YES];
 }
 
 @end

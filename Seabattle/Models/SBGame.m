@@ -12,6 +12,7 @@
 
 @synthesize me;
 @synthesize enemy;
+@synthesize myTurn;
 
 static SBGame *sharedInstance = nil;
 static int size = 10;

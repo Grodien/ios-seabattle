@@ -12,14 +12,14 @@
 @implementation SBGameFieldView
 
 @synthesize gameField;
-@synthesize visible;
+@synthesize hideShips;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
       gameField = [[SBPlayField alloc] init];
-      visible = false;
+      hideShips = false;
     }
     return self;
 }
@@ -46,10 +46,12 @@
       if (fieldValue == VALUE_FREE) {
         CGContextStrokeRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
       } else if (fieldValue == VALUE_FREE_HIT) {
-        CGContextFillRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
+        CGContextSetRGBFillColor(contextRef, 0, 0, 255, 1);
+        CGContextFillRect(contextRef, CGRectMake(j*fieldLength+2, i*fieldLength+2, fieldLength-4, fieldLength-4));
+        CGContextSetRGBFillColor(contextRef, 0, 0, 0, 1);
       } else if (fieldValue == VALUE_SHIP) {
         CGContextStrokeRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
-        if (visible) {
+        if (!hideShips) {
           CGContextFillEllipseInRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
         } 
       } else if (fieldValue == VALUE_SHIP_HIT) {
@@ -57,9 +59,7 @@
         
         CGContextSetRGBFillColor(contextRef, 255, 0, 0, 1);
         
-        if (visible) {
-          CGContextFillEllipseInRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
-        }
+        CGContextFillEllipseInRect(contextRef, CGRectMake(j*fieldLength, i*fieldLength, fieldLength, fieldLength));
         
         CGContextSetRGBFillColor(contextRef, 0, 0, 0, 1);
       }

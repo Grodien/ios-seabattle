@@ -12,6 +12,6 @@
 @interface SBGameFieldView : UIView
 
 @property (strong, nonatomic) SBPlayField* gameField;
-@property (nonatomic) bool visible;
+@property (nonatomic) bool hideShips;
 
 @end
