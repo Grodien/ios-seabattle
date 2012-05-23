@@ -16,8 +16,8 @@
 
 @property (nonatomic) NSInputStream *inputStream;
 @property (nonatomic) NSOutputStream *outputStream;
-@property (nonatomic) NSMutableArray *messageReceivedCallbackTargets;
-@property (nonatomic) NSMutableArray *messageReceivedCallbackSelectors;
+@property (strong, nonatomic) NSMutableArray *messageReceivedCallbackTargets;
+@property (strong, nonatomic) NSMutableArray *messageReceivedCallbackSelectors;
 @property (nonatomic) bool connected;
 @property (nonatomic) NSMutableString *messageBuffer;
 

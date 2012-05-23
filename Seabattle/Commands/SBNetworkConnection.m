@@ -8,8 +8,9 @@
 
 #import "SBNetworkConnection.h"
 #import "SBAllCommands.h"
+#import "SBDisconnectCommand.h"
 
-#define HOSTADRESS @"10.0.0.7"
+#define HOSTADRESS @"192.168.168.179"
 #define HOSTPORT 8222
 
 
@@ -39,6 +40,8 @@ static SBNetworkConnection *sharedInstance = nil;
     outputStream = nil;
     connected = NO;
     messageBuffer = [NSMutableString stringWithCapacity:50];
+    messageReceivedCallbackSelectors = [NSMutableArray arrayWithCapacity:5];
+    messageReceivedCallbackTargets = [NSMutableArray arrayWithCapacity:5];
   }
   
   return self;
@@ -69,7 +72,18 @@ static SBNetworkConnection *sharedInstance = nil;
 }
 
 - (void)disconnect {
+  SBDisconnectCommand* cmd = [[SBDisconnectCommand alloc] initWithType:Disconnect];
+  [self sendCommand:cmd];
   
+  connected = NO;
+  
+  [inputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+  [outputStream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+  
+  [inputStream close];
+  [outputStream close];
+  inputStream = nil;
+  outputStream = nil;
 }
 
 - (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent {
@@ -107,14 +121,24 @@ static SBNetworkConnection *sharedInstance = nil;
               
               switch ((ServerCommand)[[cmd objectAtIndex:0] intValue]) {
                 case PartialUpdate:
+                  command = [[SBPartialUpdate alloc] initWithParams:cmd];
                   break;
                 case FullUpdate:
+                  command = [[SBFullUpdateCommand alloc] initWithParams:cmd];
                   break;
                 case PlayerReady:
+                  command = [[SBPlayerReadyCommand alloc] initWithParams:cmd];
                   break;
                 case ServerSettings: 
                   command = [[SBServerSettingsCommand alloc] initWithParams:cmd];
                 case Error:
+                  command = [[SBErrorCommand alloc] initWithParams:cmd];
+                  break;
+                case Win:
+                  command = [[SBWinCommand alloc] initWithParams:cmd];
+                  break;
+                case PlayerFound:
+                  command = [[SBPlayerFound alloc] initWithParams:cmd];
                   break;
                 default:
                   break;
@@ -154,8 +178,8 @@ static SBNetworkConnection *sharedInstance = nil;
 }
 
 - (void)subscribeMessageReceived:(id)obj withSelector:(SEL)selector {
-  [messageReceivedCallbackTargets addObject: obj];
-  [messageReceivedCallbackSelectors addObject: [NSValue valueWithPointer: selector]];
+  [self.messageReceivedCallbackTargets addObject: obj];
+  [self.messageReceivedCallbackSelectors addObject: [NSValue valueWithPointer: selector]];
 }
 
 - (void)unsubscribeMessageReceived:(id)obj withSelector:(SEL)selector {

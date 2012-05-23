@@ -10,6 +10,9 @@
 #import "SBNetworkConnection.h"
 #import "SBUpdateNameCommand.h"
 #import "SBGame.h"
+#import "SBAllCommands.h"
+#import "SBGameSetupViewController.h"
+#import "SBAppDelegate.h"
 
 @interface SBQueueViewController ()
 
@@ -36,13 +39,15 @@
   [[SBNetworkConnection sharedInstance] unsubscribeMessageReceived:self withSelector:@selector(onMessageReceived:)];
 }
 
-- (void)viewDidLoad
-{
-  [super viewDidLoad];
-  
+- (void)viewDidAppear:(BOOL)animated {
   [[SBNetworkConnection sharedInstance] connect];
   [[SBNetworkConnection sharedInstance] sendCommand:[[SBUpdateNameCommand alloc] initWithName:[SBGame sharedInstance].me.name]];
   [activityIndicator startAnimating];
+}
+
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
 }
 
 - (void)viewDidUnload
@@ -57,8 +62,19 @@
   return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)onMessageReceived:(id)command {
-  
+- (void)onMessageReceived:(SBServerCommand*)command {
+  if (command.command == ServerSettings) {
+    [SBGame size:((SBServerSettingsCommand*)command).SIZE];
+  } else if (command.command == PlayerFound) {
+    SBGame* game = [SBGame sharedInstance];
+    game.enemy = [[SBPlayer alloc] initWithName:((SBPlayerFound*)command).playerName];
+    
+    SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate showGameSetupWindow];
+  } else if (command.command == FullUpdate) {
+    SBPlayField *field = [[SBPlayField alloc] initWithString:((SBFullUpdateCommand*)command).fieldData];
+    [SBGame sharedInstance].me.playField = field;
+  }
 }
 
 - (IBAction)onCancelClick:(UIButton *)sender {

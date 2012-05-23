@@ -12,13 +12,19 @@
 
 @synthesize name;
 @synthesize playField;
+@synthesize ready;
 
-- (id)initMySelf {
+- (id)initWithName:(NSString*)pName {
   if (self = [super init]) {
-    name = @"Thomas";
-    //TODO: load NSUserDefaults
+    name = pName;
+    playField = [[SBPlayField alloc] init];
+    ready = false;
   }
   return self;
+}
+
+- (id)initMySelf {
+  return [self initWithName:@"Thomas"];
 }
 
 @end

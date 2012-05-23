@@ -16,4 +16,9 @@
 
 @property (strong, nonatomic) SBViewController *viewController;
 
+- (void)showMainWindow;
+- (void)showQueueWindow;
+- (void)showGameSetupWindow;
+- (void)showGameWindow;
+
 @end

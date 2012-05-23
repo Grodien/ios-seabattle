@@ -11,7 +11,9 @@ typedef enum {
   FullUpdate,
   PlayerReady,
   ServerSettings,
-  Error
+  Error,
+  Win,
+  PlayerFound
 }ServerCommand;
 
 typedef enum {
@@ -20,5 +22,5 @@ typedef enum {
   Ready,
   UpdateName,
   RenewGameField,
-  Disconncet
+  Disconnect
 }PlayerCommand;

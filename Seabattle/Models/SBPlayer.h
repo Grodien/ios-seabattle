@@ -13,7 +13,9 @@
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) SBPlayField *playField;
+@property (nonatomic) bool ready;
 
+- (id)initWithName:(NSString*)pName;
 - (id)initMySelf;
 
 @end

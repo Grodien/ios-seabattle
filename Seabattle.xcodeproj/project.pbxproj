@@ -18,6 +18,37 @@
 		56ADA52A15510F0C0071461C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50B15510F0B0071461C /* Foundation.framework */; };
 		56ADA53215510F0C0071461C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56ADA53015510F0C0071461C /* InfoPlist.strings */; };
 		56ADA53515510F0C0071461C /* SeabattleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA53415510F0C0071461C /* SeabattleTests.m */; };
+		56C82C531568FB8E0037281D /* SBFullUpdateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C521568FB8E0037281D /* SBFullUpdateCommand.m */; };
+		56C82C541568FB8E0037281D /* SBFullUpdateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C521568FB8E0037281D /* SBFullUpdateCommand.m */; };
+		56C82C581568FC9E0037281D /* SBPartialUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C571568FC9E0037281D /* SBPartialUpdate.m */; };
+		56C82C591568FC9E0037281D /* SBPartialUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C571568FC9E0037281D /* SBPartialUpdate.m */; };
+		56C82C5C1568FDAB0037281D /* SBPlayerReadyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C5B1568FDAB0037281D /* SBPlayerReadyCommand.m */; };
+		56C82C5D1568FDAB0037281D /* SBPlayerReadyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C5B1568FDAB0037281D /* SBPlayerReadyCommand.m */; };
+		56C82C601568FE8A0037281D /* SBErrorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C5F1568FE8A0037281D /* SBErrorCommand.m */; };
+		56C82C611568FE8A0037281D /* SBErrorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C5F1568FE8A0037281D /* SBErrorCommand.m */; };
+		56C82C681568FFD40037281D /* SBRenewGameFieldCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C671568FFD40037281D /* SBRenewGameFieldCommand.m */; };
+		56C82C691568FFD40037281D /* SBRenewGameFieldCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C671568FFD40037281D /* SBRenewGameFieldCommand.m */; };
+		56C82C6C1569005C0037281D /* SBReadyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C6B1569005C0037281D /* SBReadyCommand.m */; };
+		56C82C6D1569005C0037281D /* SBReadyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C6B1569005C0037281D /* SBReadyCommand.m */; };
+		56C82C70156901970037281D /* SBPlayerShoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C6F156901970037281D /* SBPlayerShoot.m */; };
+		56C82C71156901970037281D /* SBPlayerShoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C6F156901970037281D /* SBPlayerShoot.m */; };
+		56C82C7415690C240037281D /* SBWinCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7315690C230037281D /* SBWinCommand.m */; };
+		56C82C7515690C240037281D /* SBWinCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7315690C230037281D /* SBWinCommand.m */; };
+		56C82C7815690DF70037281D /* SBDisconnectCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7715690DF70037281D /* SBDisconnectCommand.m */; };
+		56C82C7915690DF70037281D /* SBDisconnectCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7715690DF70037281D /* SBDisconnectCommand.m */; };
+		56C82C7C156912490037281D /* SBPlayerFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7B156912480037281D /* SBPlayerFound.m */; };
+		56C82C7D156912490037281D /* SBPlayerFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7B156912480037281D /* SBPlayerFound.m */; };
+		56C82C8115692C8D0037281D /* SBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7F15692C8D0037281D /* SBGameViewController.m */; };
+		56C82C8215692C8D0037281D /* SBGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C7F15692C8D0037281D /* SBGameViewController.m */; };
+		56C82C8315692C8D0037281D /* SBGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C82C8015692C8D0037281D /* SBGameViewController.xib */; };
+		56C82C8415692C8D0037281D /* SBGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C82C8015692C8D0037281D /* SBGameViewController.xib */; };
+		56C82C8815692DF90037281D /* SBGameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C8615692DF90037281D /* SBGameSetupViewController.m */; };
+		56C82C8915692DF90037281D /* SBGameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C8615692DF90037281D /* SBGameSetupViewController.m */; };
+		56C82C8A15692DF90037281D /* SBGameSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C82C8715692DF90037281D /* SBGameSetupViewController.xib */; };
+		56C82C8B15692DF90037281D /* SBGameSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C82C8715692DF90037281D /* SBGameSetupViewController.xib */; };
+		56C82C9515692F940037281D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C82C9415692F940037281D /* QuartzCore.framework */; };
+		56C82C98156939D50037281D /* SBGameFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C97156939D50037281D /* SBGameFieldView.m */; };
+		56C82C99156939D50037281D /* SBGameFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C97156939D50037281D /* SBGameFieldView.m */; };
 		56DE075715611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
 		56DE075815611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
 		56DE075915611FF4006DD960 /* SBQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075315611FF4006DD960 /* SBQueueViewController.xib */; };
@@ -71,6 +102,35 @@
 		56ADA53115510F0C0071461C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		56ADA53315510F0C0071461C /* SeabattleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeabattleTests.h; sourceTree = "<group>"; };
 		56ADA53415510F0C0071461C /* SeabattleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeabattleTests.m; sourceTree = "<group>"; };
+		56C82C511568FB8E0037281D /* SBFullUpdateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBFullUpdateCommand.h; sourceTree = "<group>"; };
+		56C82C521568FB8E0037281D /* SBFullUpdateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBFullUpdateCommand.m; sourceTree = "<group>"; };
+		56C82C561568FC9E0037281D /* SBPartialUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPartialUpdate.h; sourceTree = "<group>"; };
+		56C82C571568FC9E0037281D /* SBPartialUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPartialUpdate.m; sourceTree = "<group>"; };
+		56C82C5A1568FDAB0037281D /* SBPlayerReadyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPlayerReadyCommand.h; sourceTree = "<group>"; };
+		56C82C5B1568FDAB0037281D /* SBPlayerReadyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPlayerReadyCommand.m; sourceTree = "<group>"; };
+		56C82C5E1568FE8A0037281D /* SBErrorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBErrorCommand.h; path = Commands/SBErrorCommand.h; sourceTree = "<group>"; };
+		56C82C5F1568FE8A0037281D /* SBErrorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBErrorCommand.m; path = Commands/SBErrorCommand.m; sourceTree = "<group>"; };
+		56C82C661568FFD40037281D /* SBRenewGameFieldCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBRenewGameFieldCommand.h; path = Commands/SBRenewGameFieldCommand.h; sourceTree = "<group>"; };
+		56C82C671568FFD40037281D /* SBRenewGameFieldCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBRenewGameFieldCommand.m; path = Commands/SBRenewGameFieldCommand.m; sourceTree = "<group>"; };
+		56C82C6A1569005C0037281D /* SBReadyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBReadyCommand.h; path = Commands/SBReadyCommand.h; sourceTree = "<group>"; };
+		56C82C6B1569005C0037281D /* SBReadyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBReadyCommand.m; path = Commands/SBReadyCommand.m; sourceTree = "<group>"; };
+		56C82C6E156901960037281D /* SBPlayerShoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPlayerShoot.h; sourceTree = "<group>"; };
+		56C82C6F156901970037281D /* SBPlayerShoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPlayerShoot.m; sourceTree = "<group>"; };
+		56C82C7215690C230037281D /* SBWinCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBWinCommand.h; path = Commands/SBWinCommand.h; sourceTree = "<group>"; };
+		56C82C7315690C230037281D /* SBWinCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBWinCommand.m; path = Commands/SBWinCommand.m; sourceTree = "<group>"; };
+		56C82C7615690DF70037281D /* SBDisconnectCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDisconnectCommand.h; path = Commands/SBDisconnectCommand.h; sourceTree = "<group>"; };
+		56C82C7715690DF70037281D /* SBDisconnectCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBDisconnectCommand.m; path = Commands/SBDisconnectCommand.m; sourceTree = "<group>"; };
+		56C82C7A156912480037281D /* SBPlayerFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPlayerFound.h; path = Commands/SBPlayerFound.h; sourceTree = "<group>"; };
+		56C82C7B156912480037281D /* SBPlayerFound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayerFound.m; path = Commands/SBPlayerFound.m; sourceTree = "<group>"; };
+		56C82C7E15692C8D0037281D /* SBGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGameViewController.h; path = ViewControllers/SBGameViewController.h; sourceTree = "<group>"; };
+		56C82C7F15692C8D0037281D /* SBGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGameViewController.m; path = ViewControllers/SBGameViewController.m; sourceTree = "<group>"; };
+		56C82C8015692C8D0037281D /* SBGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBGameViewController.xib; path = ViewControllers/SBGameViewController.xib; sourceTree = "<group>"; };
+		56C82C8515692DF90037281D /* SBGameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGameSetupViewController.h; path = ViewControllers/SBGameSetupViewController.h; sourceTree = "<group>"; };
+		56C82C8615692DF90037281D /* SBGameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGameSetupViewController.m; path = ViewControllers/SBGameSetupViewController.m; sourceTree = "<group>"; };
+		56C82C8715692DF90037281D /* SBGameSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBGameSetupViewController.xib; path = ViewControllers/SBGameSetupViewController.xib; sourceTree = "<group>"; };
+		56C82C9415692F940037281D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56C82C96156939D40037281D /* SBGameFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBGameFieldView.h; sourceTree = "<group>"; };
+		56C82C97156939D50037281D /* SBGameFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGameFieldView.m; sourceTree = "<group>"; };
 		56DE075115611FF4006DD960 /* SBQueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBQueueViewController.h; path = ViewControllers/SBQueueViewController.h; sourceTree = "<group>"; };
 		56DE075215611FF4006DD960 /* SBQueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBQueueViewController.m; path = ViewControllers/SBQueueViewController.m; sourceTree = "<group>"; };
 		56DE075315611FF4006DD960 /* SBQueueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SBQueueViewController.xib; path = ViewControllers/SBQueueViewController.xib; sourceTree = "<group>"; };
@@ -102,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C82C9515692F940037281D /* QuartzCore.framework in Frameworks */,
 				56ADA50A15510F0B0071461C /* UIKit.framework in Frameworks */,
 				56ADA50C15510F0B0071461C /* Foundation.framework in Frameworks */,
 				56ADA50E15510F0B0071461C /* CoreGraphics.framework in Frameworks */,
@@ -143,6 +204,7 @@
 		56ADA50815510F0B0071461C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56C82C9415692F940037281D /* QuartzCore.framework */,
 				56ADA50915510F0B0071461C /* UIKit.framework */,
 				56ADA50B15510F0B0071461C /* Foundation.framework */,
 				56ADA50D15510F0B0071461C /* CoreGraphics.framework */,
@@ -209,6 +271,26 @@
 				56DE078415613151006DD960 /* SBServerSettingsCommand.h */,
 				56DE078515613151006DD960 /* SBServerSettingsCommand.m */,
 				56DE0788156133BB006DD960 /* SBAllCommands.h */,
+				56C82C511568FB8E0037281D /* SBFullUpdateCommand.h */,
+				56C82C521568FB8E0037281D /* SBFullUpdateCommand.m */,
+				56C82C561568FC9E0037281D /* SBPartialUpdate.h */,
+				56C82C571568FC9E0037281D /* SBPartialUpdate.m */,
+				56C82C5A1568FDAB0037281D /* SBPlayerReadyCommand.h */,
+				56C82C5B1568FDAB0037281D /* SBPlayerReadyCommand.m */,
+				56C82C5E1568FE8A0037281D /* SBErrorCommand.h */,
+				56C82C5F1568FE8A0037281D /* SBErrorCommand.m */,
+				56C82C661568FFD40037281D /* SBRenewGameFieldCommand.h */,
+				56C82C671568FFD40037281D /* SBRenewGameFieldCommand.m */,
+				56C82C6A1569005C0037281D /* SBReadyCommand.h */,
+				56C82C6B1569005C0037281D /* SBReadyCommand.m */,
+				56C82C6E156901960037281D /* SBPlayerShoot.h */,
+				56C82C6F156901970037281D /* SBPlayerShoot.m */,
+				56C82C7215690C230037281D /* SBWinCommand.h */,
+				56C82C7315690C230037281D /* SBWinCommand.m */,
+				56C82C7615690DF70037281D /* SBDisconnectCommand.h */,
+				56C82C7715690DF70037281D /* SBDisconnectCommand.m */,
+				56C82C7A156912480037281D /* SBPlayerFound.h */,
+				56C82C7B156912480037281D /* SBPlayerFound.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -222,6 +304,14 @@
 				56DE075415611FF4006DD960 /* SBViewController.h */,
 				56DE075515611FF4006DD960 /* SBViewController.m */,
 				56DE075615611FF4006DD960 /* SBViewController.xib */,
+				56C82C7E15692C8D0037281D /* SBGameViewController.h */,
+				56C82C7F15692C8D0037281D /* SBGameViewController.m */,
+				56C82C8015692C8D0037281D /* SBGameViewController.xib */,
+				56C82C8515692DF90037281D /* SBGameSetupViewController.h */,
+				56C82C8615692DF90037281D /* SBGameSetupViewController.m */,
+				56C82C8715692DF90037281D /* SBGameSetupViewController.xib */,
+				56C82C96156939D40037281D /* SBGameFieldView.h */,
+				56C82C97156939D50037281D /* SBGameFieldView.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -313,6 +403,8 @@
 				56ADA51415510F0B0071461C /* InfoPlist.strings in Resources */,
 				56DE075915611FF4006DD960 /* SBQueueViewController.xib in Resources */,
 				56DE075D15611FF4006DD960 /* SBViewController.xib in Resources */,
+				56C82C8315692C8D0037281D /* SBGameViewController.xib in Resources */,
+				56C82C8A15692DF90037281D /* SBGameSetupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +415,8 @@
 				56ADA53215510F0C0071461C /* InfoPlist.strings in Resources */,
 				56DE075A15611FF4006DD960 /* SBQueueViewController.xib in Resources */,
 				56DE075E15611FF4006DD960 /* SBViewController.xib in Resources */,
+				56C82C8415692C8D0037281D /* SBGameViewController.xib in Resources */,
+				56C82C8B15692DF90037281D /* SBGameSetupViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +455,19 @@
 				56DE078215612F6F006DD960 /* SBServerCommand.m in Sources */,
 				56DE078615613151006DD960 /* SBServerSettingsCommand.m in Sources */,
 				56DE078B1561745D006DD960 /* SBPlayField.m in Sources */,
+				56C82C531568FB8E0037281D /* SBFullUpdateCommand.m in Sources */,
+				56C82C581568FC9E0037281D /* SBPartialUpdate.m in Sources */,
+				56C82C5C1568FDAB0037281D /* SBPlayerReadyCommand.m in Sources */,
+				56C82C601568FE8A0037281D /* SBErrorCommand.m in Sources */,
+				56C82C681568FFD40037281D /* SBRenewGameFieldCommand.m in Sources */,
+				56C82C6C1569005C0037281D /* SBReadyCommand.m in Sources */,
+				56C82C70156901970037281D /* SBPlayerShoot.m in Sources */,
+				56C82C7415690C240037281D /* SBWinCommand.m in Sources */,
+				56C82C7815690DF70037281D /* SBDisconnectCommand.m in Sources */,
+				56C82C7C156912490037281D /* SBPlayerFound.m in Sources */,
+				56C82C8115692C8D0037281D /* SBGameViewController.m in Sources */,
+				56C82C8815692DF90037281D /* SBGameSetupViewController.m in Sources */,
+				56C82C98156939D50037281D /* SBGameFieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +486,19 @@
 				56DE078315612F6F006DD960 /* SBServerCommand.m in Sources */,
 				56DE078715613151006DD960 /* SBServerSettingsCommand.m in Sources */,
 				56DE078C1561745D006DD960 /* SBPlayField.m in Sources */,
+				56C82C541568FB8E0037281D /* SBFullUpdateCommand.m in Sources */,
+				56C82C591568FC9E0037281D /* SBPartialUpdate.m in Sources */,
+				56C82C5D1568FDAB0037281D /* SBPlayerReadyCommand.m in Sources */,
+				56C82C611568FE8A0037281D /* SBErrorCommand.m in Sources */,
+				56C82C691568FFD40037281D /* SBRenewGameFieldCommand.m in Sources */,
+				56C82C6D1569005C0037281D /* SBReadyCommand.m in Sources */,
+				56C82C71156901970037281D /* SBPlayerShoot.m in Sources */,
+				56C82C7515690C240037281D /* SBWinCommand.m in Sources */,
+				56C82C7915690DF70037281D /* SBDisconnectCommand.m in Sources */,
+				56C82C7D156912490037281D /* SBPlayerFound.m in Sources */,
+				56C82C8215692C8D0037281D /* SBGameViewController.m in Sources */,
+				56C82C8915692DF90037281D /* SBGameSetupViewController.m in Sources */,
+				56C82C99156939D50037281D /* SBGameFieldView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

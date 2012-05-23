@@ -11,10 +11,11 @@
 
 @interface SBGame : NSObject
 
-@property (nonatomic) SBPlayer* me;
-@property (nonatomic) SBPlayer* enemy;
-@property (nonatomic) int size;
+@property (strong, nonatomic) SBPlayer* me;
+@property (strong, nonatomic) SBPlayer* enemy;
+@property (nonatomic) bool myTurn;
 
 + (SBGame *)sharedInstance;
-
++ (int)size;
++ (void)size:(int)s;
 @end
