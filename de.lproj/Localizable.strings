@@ -11,8 +11,8 @@
 "btnStartSearchingTitle" = "Spiel suchen";
 "EnemyLabel" = "Gegner: %@";
 "renewGameFieldButtonTitle" = "Spielfeld erneuern";
-"ReadyButtonTitleState1" = "Bereit"
-"ReadyButtonTitleState2" = "Nicht bereit"
+"ReadyButtonTitleState1" = "Bereit";
+"ReadyButtonTitleState2" = "Nicht bereit";
 "ReadyStataReady" = "Bereit";
 "ReadyStateNotReady" = "Nicht bereit";
 "YouWonText" = "Gratulation\nSie haben gewonnen!";

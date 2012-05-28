@@ -75,6 +75,7 @@
 		56DE078C1561745D006DD960 /* SBPlayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE078A1561745D006DD960 /* SBPlayField.m */; };
 		56E348941573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
 		56E348951573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
+		56E3489F1573DCFB0038070F /* SBKeepAliveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,8 @@
 		56DE078A1561745D006DD960 /* SBPlayField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPlayField.m; path = Models/SBPlayField.m; sourceTree = "<group>"; };
 		56E348961573DAAB0038070F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		56E348981573DAD80038070F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56E3489D1573DCFB0038070F /* SBKeepAliveCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBKeepAliveCommand.h; path = Commands/SBKeepAliveCommand.h; sourceTree = "<group>"; };
+		56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBKeepAliveCommand.m; path = Commands/SBKeepAliveCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +299,8 @@
 				56C82C7715690DF70037281D /* SBDisconnectCommand.m */,
 				56C82C7A156912480037281D /* SBPlayerFound.h */,
 				56C82C7B156912480037281D /* SBPlayerFound.m */,
+				56E3489D1573DCFB0038070F /* SBKeepAliveCommand.h */,
+				56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 				56C82C8115692C8D0037281D /* SBGameViewController.m in Sources */,
 				56C82C8815692DF90037281D /* SBGameSetupViewController.m in Sources */,
 				56C82C98156939D50037281D /* SBGameFieldView.m in Sources */,
+				56E3489F1573DCFB0038070F /* SBKeepAliveCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
