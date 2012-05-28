@@ -21,6 +21,11 @@
 "EnemyTurn" = "Enemy Turn";
 "ExitLabelText" = "Exit"; 
 "WaitingForServerLabelText" = "Waiting for Server response";
+"PreferencesLabel" = "Preferences";
+"usernamelabel" = "Username";
+"winsLabel" = "Wins";
+"lossesLabel" = "Losses";
+
 
 
 "ErrorPlayerDisconnectedText" = "Player Disconnected. The Game will end now!";

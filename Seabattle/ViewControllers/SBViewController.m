@@ -17,6 +17,7 @@
 
 @implementation SBViewController
 @synthesize btnStartSearching;
+@synthesize btnPreferences;
 
 - (void)viewDidLoad
 {
@@ -28,6 +29,7 @@
 - (void)viewDidUnload
 {
     [self setBtnStartSearching:nil];
+    [self setBtnPreferences:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -42,5 +44,10 @@
   SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
   [delegate showQueueWindow];
 
+}
+
+- (IBAction)buttonPreferencesPressed:(UIButton *)sender {
+    SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate showPreferencesWindow];
 }
 @end

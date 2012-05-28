@@ -21,6 +21,10 @@
 "EnemyTurn" = "Gegner ist am zug";
 "ExitLabelText" = "Beenden"; 
 "WaitingForServerLabelText" = "Warte auf Serverantwort";
+"PreferencesLabel" = "Einstellungen";
+"usernamelabel" = "Benutzername";
+"winsLabel" = "Gewonnen";
+"lossesLabel" = "Verloren";
 
 
 "ErrorPlayerDisconnectedText" = "Ein Spieler hat das Spiel verlassen. Diese Spiel wird nun beendet!";

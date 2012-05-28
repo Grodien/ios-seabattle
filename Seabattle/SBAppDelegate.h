@@ -20,5 +20,6 @@
 - (void)showQueueWindow;
 - (void)showGameSetupWindow;
 - (void)showGameWindow;
+- (void)showPreferencesWindow;
 
 @end

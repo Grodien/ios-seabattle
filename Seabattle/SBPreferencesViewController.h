@@ -12,8 +12,10 @@
 @interface SBPreferencesViewController : UIViewController
 
 @property (strong, nonatomic) SBUser *user;
-
+@property (weak, nonatomic) IBOutlet UILabel *labelPreferences;
+@property (weak, nonatomic) IBOutlet UILabel *labelusername;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldUsername;
+
 @property (strong, nonatomic) IBOutlet UILabel *labelWins;
 @property (strong, nonatomic) IBOutlet UILabel *labelLosses;
 

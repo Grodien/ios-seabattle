@@ -76,6 +76,8 @@
 		56E348941573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
 		56E348951573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
 		56E3489F1573DCFB0038070F /* SBKeepAliveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */; };
+		74762F4F1574273300B88E68 /* SBPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74762F4D1574273200B88E68 /* SBPreferencesViewController.m */; };
+		74762F501574273300B88E68 /* SBPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74762F4E1574273300B88E68 /* SBPreferencesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,9 @@
 		56E348981573DAD80038070F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		56E3489D1573DCFB0038070F /* SBKeepAliveCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBKeepAliveCommand.h; path = Commands/SBKeepAliveCommand.h; sourceTree = "<group>"; };
 		56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBKeepAliveCommand.m; path = Commands/SBKeepAliveCommand.m; sourceTree = "<group>"; };
+		74762F4C1574273200B88E68 /* SBPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPreferencesViewController.h; sourceTree = "<group>"; };
+		74762F4D1574273200B88E68 /* SBPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPreferencesViewController.m; sourceTree = "<group>"; };
+		74762F4E1574273300B88E68 /* SBPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPreferencesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +313,9 @@
 		56DE074F15611F36006DD960 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				74762F4C1574273200B88E68 /* SBPreferencesViewController.h */,
+				74762F4D1574273200B88E68 /* SBPreferencesViewController.m */,
+				74762F4E1574273300B88E68 /* SBPreferencesViewController.xib */,
 				56DE075115611FF4006DD960 /* SBQueueViewController.h */,
 				56DE075215611FF4006DD960 /* SBQueueViewController.m */,
 				56DE075315611FF4006DD960 /* SBQueueViewController.xib */,
@@ -417,6 +425,7 @@
 				56C82C8315692C8D0037281D /* SBGameViewController.xib in Resources */,
 				56C82C8A15692DF90037281D /* SBGameSetupViewController.xib in Resources */,
 				56E348941573DAAB0038070F /* Localizable.strings in Resources */,
+				74762F501574273300B88E68 /* SBPreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +491,7 @@
 				56C82C8815692DF90037281D /* SBGameSetupViewController.m in Sources */,
 				56C82C98156939D50037281D /* SBGameFieldView.m in Sources */,
 				56E3489F1573DCFB0038070F /* SBKeepAliveCommand.m in Sources */,
+				74762F4F1574273300B88E68 /* SBPreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

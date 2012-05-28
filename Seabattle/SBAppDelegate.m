@@ -13,6 +13,7 @@
 #import "SBGameSetupViewController.h"
 #import "SBGameViewController.h"
 #import "SBNetworkConnection.h"
+#import "SBPreferencesViewController.h"
 
 @implementation SBAppDelegate
 
@@ -88,6 +89,16 @@
   
   [self.viewController dismissModalViewControllerAnimated:NO];
   [self.viewController presentModalViewController:view animated:YES];
+}
+
+- (void) showPreferencesWindow {
+    
+    SBPreferencesViewController *view = [[SBPreferencesViewController alloc] init];
+    view.modalPresentationStyle = UIModalPresentationFullScreen;
+    view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self.viewController dismissModalViewControllerAnimated:NO];
+    [self.viewController presentModalViewController:view animated:YES];
 }
 
 @end
