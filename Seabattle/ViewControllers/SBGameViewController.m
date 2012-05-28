@@ -47,7 +47,7 @@
 }
 
 - (void)updateStatusLabel {
-  self.statusLabel.text = ([SBGame sharedInstance].myTurn ? @"My Turn" : @"Enemys Turn");
+  self.statusLabel.text = ([SBGame sharedInstance].myTurn ? NSLocalizedString(@"MyTurn", @"") : NSLocalizedString(@"EnemyTurn", @""));
 }
 
 - (void)onMessageReceived:(SBServerCommand*)command {
@@ -85,15 +85,16 @@
     [btn.layer setBorderWidth:1];
     [btn.layer setBorderColor:[UIColor blackColor].CGColor];
     btn.frame = self.statusLabel.frame;
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.statusLabel.hidden = YES;
-    [btn setTitle:@"Exit" forState:UIControlStateNormal];
+    [btn setTitle:NSLocalizedString(@"ExitLabelText", @"") forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(onExitButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
     if (cmd.win) {
-      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:@"Congratulation\nYou Won!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:NSLocalizedString(@"YouWonText", @"") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     } else {
-      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:@"You Lost!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:NSLocalizedString(@"YouLostText", @"") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     }
     
     enemyGameField.hideShips = NO;
@@ -153,7 +154,7 @@
         SBPlayerShoot *cmd = [[SBPlayerShoot alloc] initWithPosX:posX PosY:posY];
         [[SBNetworkConnection sharedInstance] sendCommand:cmd];
         [SBGame sharedInstance].myTurn = NO;
-        self.statusLabel.text = @"Waiting for Server";
+        self.statusLabel.text = NSLocalizedString(@"WaitingForServerLabelText", @"");
       }
     }
   }

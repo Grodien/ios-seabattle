@@ -10,6 +10,7 @@
 
 @interface SBViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *btnStartSearching;
 
 - (IBAction)buttonOnlineBattlePressed:(UIButton *)sender;
 

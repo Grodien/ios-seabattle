@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Seabattle
+
+  Created by Thomas Bomatter on 5/28/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"CancelButtonText" = "Abbrechen";
+"SearchingForPlayerLabel" = "Suche Spieler...";
+"btnStartSearchingTitle" = "Spiel suchen";
+"EnemyLabel" = "Gegner: %@";
+"renewGameFieldButtonTitle" = "Spielfeld erneuern";
+"ReadyButtonTitleState1" = "Bereit"
+"ReadyButtonTitleState2" = "Nicht bereit"
+"ReadyStataReady" = "Bereit";
+"ReadyStateNotReady" = "Nicht bereit";
+"YouWonText" = "Gratulation\nSie haben gewonnen!";
+"YouLostText" = "Sie haben verloren!";
+"MyTurn" = "ich bin am zug";
+"EnemyTurn" = "Gegner ist am zug";
+"ExitLabelText" = "Beenden"; 
+"WaitingForServerLabelText" = "Warte auf Serverantwort";
+
+
+"ErrorPlayerDisconnectedText" = "Ein Spieler hat das Spiel verlassen. Diese Spiel wird nun beendet!";
