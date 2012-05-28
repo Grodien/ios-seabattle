@@ -16,15 +16,18 @@
 @end
 
 @implementation SBViewController
+@synthesize btnStartSearching;
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [self.btnStartSearching setTitle:NSLocalizedString(@"btnStartSearchingTitle", @"") forState:UIControlStateNormal];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setBtnStartSearching:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

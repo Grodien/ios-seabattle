@@ -20,6 +20,7 @@
 
 @implementation SBQueueViewController
 @synthesize statusLabel;
+@synthesize cancelButton;
 @synthesize activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,12 +49,16 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  [self.cancelButton setTitle:NSLocalizedString(@"CancelButtonText", @"") forState:UIControlStateNormal];
+  self.statusLabel.text = NSLocalizedString(@"SearchingForPlayerLabel", @"");
 }
 
 - (void)viewDidUnload
 {
   [self setActivityIndicator:nil];
   [self setStatusLabel:nil];
+  [self setCancelButton:nil];
   [super viewDidUnload];
 }
 

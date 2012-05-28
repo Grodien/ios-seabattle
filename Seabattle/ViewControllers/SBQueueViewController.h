@@ -10,6 +10,7 @@
 
 @interface SBQueueViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 - (IBAction)onCancelClick:(UIButton *)sender;
 

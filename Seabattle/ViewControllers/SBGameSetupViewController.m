@@ -44,7 +44,10 @@
   self.gameFieldView.gameField = [SBGame sharedInstance].me.playField;
   [self.view addSubview:self.gameFieldView];
   
-  self.enemyLabel.text = [NSString stringWithFormat:@"Enemy: %@", [SBGame sharedInstance].enemy.name];
+  self.enemyLabel.text = [NSString stringWithFormat:NSLocalizedString(@"EnemyLabel", @""), [SBGame sharedInstance].enemy.name];
+  [self.renewButton setTitle:NSLocalizedString(@"renewGameFieldButtonTitle", @"") forState:UIControlStateNormal];
+  [self.readyButton setTitle:NSLocalizedString(@"ReadyButtonTitleState1", @"") forState:UIControlStateNormal];
+  
   
   [self drawPlayField];
 }
@@ -74,10 +77,10 @@
     game.enemy.ready = cmd.ready;
     
     if (game.enemy.ready) {
-      enemyReadyStateLabel.text = @"Ready";
+      enemyReadyStateLabel.text = NSLocalizedString(@"ReadyStateReady", @"");
       enemyReadyStateLabel.textColor = [UIColor greenColor];
     } else {
-      enemyReadyStateLabel.text = @"Not Ready";
+      enemyReadyStateLabel.text = NSLocalizedString(@"ReadyStateNotReady", @"");
       enemyReadyStateLabel.textColor = [UIColor redColor];
     }
     
@@ -96,7 +99,7 @@
   } else if (command.command == Error) {
     SBErrorCommand* cmd = (SBErrorCommand*)command;
     if (cmd.errorCode == ERROR_CODE_PLAYER_DISCONNECT) {
-      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:@"Player Disconnected. The Game will end now!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+      [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:NSLocalizedString(@"ErrorPlayerDisconnectedText", @"") delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     }
   } else if (command.command == PlayerFound) {
     [SBGame sharedInstance].enemy.name = ((SBPlayerFound*)command).playerName;
@@ -121,9 +124,9 @@
   [[SBNetworkConnection sharedInstance] sendCommand:cmd];
   
   if (game.me.ready) {
-    [sender setTitle:@"Unready" forState:UIControlStateNormal];
+    [sender setTitle:NSLocalizedString(@"ReadyButtonTitleState2", @"") forState:UIControlStateNormal];
   } else {
-    [sender setTitle:@"Ready" forState:UIControlStateNormal];
+    [sender setTitle:NSLocalizedString(@"ReadyButtonTitleState1", @"") forState:UIControlStateNormal];
   }
 }
 

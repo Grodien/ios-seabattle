@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Seabattle
+
+  Created by Thomas Bomatter on 5/28/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"CancelButtonText" = "Cancel";
+"SearchingForPlayerLabel" = "Searching for Player...";
+"btnStartSearchingTitle" = "Search for Game";
+"EnemyLabel" = "Enemy: %@";
+"renewGameFieldButtonTitle" = "Renew Gamefield";
+"ReadyButtonTitleState1" = "Ready";
+"ReadyButtonTitleState2" = "Unready";
+"ReadyStataReady" = "Ready";
+"ReadyStateNotReady" = "Not Ready";
+"YouWonText" = "Congratulation\nYou Won!";
+"YouLostText" = "You Lost!";
+"MyTurn" = "My Turn";
+"EnemyTurn" = "Enemy Turn";
+"ExitLabelText" = "Exit"; 
+"WaitingForServerLabelText" = "Waiting for Server response";
+
+
+"ErrorPlayerDisconnectedText" = "Player Disconnected. The Game will end now!";
