@@ -10,7 +10,8 @@
 #import "SBAllCommands.h"
 #import "SBDisconnectCommand.h"
 
-#define HOSTADRESS @"192.168.168.179"
+//#define HOSTADRESS @"10.3.113.214"
+#define HOSTADRESS @"80.218.83.149"
 #define HOSTPORT 8222
 
 
