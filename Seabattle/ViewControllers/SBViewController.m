@@ -23,6 +23,7 @@
 {
   [super viewDidLoad];
   [self.btnStartSearching setTitle:NSLocalizedString(@"btnStartSearchingTitle", @"") forState:UIControlStateNormal];
+  [self.btnPreferences setTitle:NSLocalizedString(@"btnPreferencesTitle", @"") forState:UIControlStateNormal];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

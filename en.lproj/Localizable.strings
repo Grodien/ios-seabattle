@@ -9,6 +9,7 @@
 "CancelButtonText" = "Cancel";
 "SearchingForPlayerLabel" = "Searching for Player...";
 "btnStartSearchingTitle" = "Search for Game";
+"btnPreferencesTitle" = "Preferences";
 "EnemyLabel" = "Enemy: %@";
 "renewGameFieldButtonTitle" = "Renew Gamefield";
 "ReadyButtonTitleState1" = "Ready";

@@ -9,6 +9,7 @@
 "CancelButtonText" = "Abbrechen";
 "SearchingForPlayerLabel" = "Suche Spieler...";
 "btnStartSearchingTitle" = "Spiel suchen";
+"btnPreferencesTitle" = "Einstellungen";
 "EnemyLabel" = "Gegner: %@";
 "renewGameFieldButtonTitle" = "Spielfeld erneuern";
 "ReadyButtonTitleState1" = "Bereit";

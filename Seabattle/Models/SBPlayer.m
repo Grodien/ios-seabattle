@@ -16,6 +16,7 @@
 
 - (id)initWithName:(NSString*)pName {
   if (self = [super init]) {
+      
     name = pName;
     playField = [[SBPlayField alloc] init];
     ready = false;
@@ -26,5 +27,10 @@
 - (id)initMySelf {
   return [self initWithName:@"Thomas"];
 }
+
+- (id)initWithUserDefault {
+    NSUserDefaults *usernameDefault = [NSUserDefaults standardUserDefaults];
+    return [self initWithName:[usernameDefault stringForKey:@"Username"]];
+}  
 
 @end

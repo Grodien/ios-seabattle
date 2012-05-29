@@ -7,6 +7,7 @@
 //
 
 #import "SBPreferencesViewController.h"
+#import "SBAppDelegate.h"
 
 @interface SBPreferencesViewController ()
 
@@ -17,8 +18,9 @@
 @synthesize textFieldUsername;
 @synthesize labelWins;
 @synthesize labelLosses;
+@synthesize labelNrWins;
+@synthesize labelNrLosses;
 @synthesize labelPreferences;
-@synthesize user;
 @synthesize labelusername;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,12 +41,21 @@
     labelWins.text = NSLocalizedString(@"winsLabel", @"");
     labelLosses.text = NSLocalizedString(@"lossesLabel", @"");
     
-    NSUserDefaults *usernameText = [NSUserDefaults standardUserDefaults];
-    NSString *savedUsername = [usernameText stringForKey:@"Username Text"];
-    textFieldUsername.text = savedUsername;
+    [textFieldUsername setDelegate:self];
+    
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    textFieldUsername.text = [user stringForKey:@"Username"];
+    
+    //NSUserDefaults *nrWins = [NSUserDefaults standardUserDefaults];
+    //NSUserDefaults *nrLosses = [NSUserDefaults standardUserDefaults];
 
-    user = [SBUser sharedSBUser];
-    textFieldUsername.text = user.username;
+    if ([user stringForKey:@"nr wins"] != nil) {
+        labelNrWins.text = [user stringForKey:@"nr wins"];
+    }
+    if ([user stringForKey:@"nr losses"] != nil) {
+        labelNrLosses.text = [user stringForKey:@"nr losses"];
+    }
+    
 }
 
 - (void)viewDidUnload
@@ -52,6 +63,8 @@
     [self setLabelPreferences:nil];
     [self setLabelusername:nil];
     [self setLabelPreferences:nil];
+    [self setLabelNrWins:nil];
+    [self setLabelNrLosses:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -63,12 +76,15 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    user.username = textFieldUsername.text;
     NSUserDefaults *usernameDefault = [NSUserDefaults standardUserDefaults];
-    [usernameDefault setObject:textFieldUsername.text forKey:@"Username Text"];
+    [usernameDefault setObject:textFieldUsername.text forKey:@"Username"];
     
     [textField resignFirstResponder];
     return YES;
 }
 
+- (IBAction)buttonOKPressed:(UIButton *)sender {
+    SBAppDelegate *delegate = (SBAppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate showMainWindow];
+}
 @end

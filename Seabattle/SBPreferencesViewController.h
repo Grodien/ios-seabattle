@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SBUser.h"
 
-@interface SBPreferencesViewController : UIViewController
+@interface SBPreferencesViewController : UIViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) SBUser *user;
 @property (weak, nonatomic) IBOutlet UILabel *labelPreferences;
 @property (weak, nonatomic) IBOutlet UILabel *labelusername;
 @property (strong, nonatomic) IBOutlet UITextField *textFieldUsername;
 
 @property (strong, nonatomic) IBOutlet UILabel *labelWins;
+@property (weak, nonatomic) IBOutlet UILabel *labelNrWins;
 @property (strong, nonatomic) IBOutlet UILabel *labelLosses;
-
+@property (weak, nonatomic) IBOutlet UILabel *labelNrLosses;
+- (IBAction)buttonOKPressed:(UIButton *)sender;
 @end
