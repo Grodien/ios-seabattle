@@ -76,6 +76,10 @@
 		56E348941573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
 		56E348951573DAAB0038070F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56E348971573DAAB0038070F /* Localizable.strings */; };
 		56E3489F1573DCFB0038070F /* SBKeepAliveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */; };
+		7435A0631575714900F9EE33 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7435A0621575714900F9EE33 /* Default@2x.png */; };
+		7435A0651575714D00F9EE33 /* retina_icon_battleships.png in Resources */ = {isa = PBXBuildFile; fileRef = 7435A0641575714D00F9EE33 /* retina_icon_battleships.png */; };
+		7435A0671575715500F9EE33 /* normal_icon_battleships.png in Resources */ = {isa = PBXBuildFile; fileRef = 7435A0661575715500F9EE33 /* normal_icon_battleships.png */; };
+		7435A0691575715A00F9EE33 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7435A0681575715A00F9EE33 /* Default.png */; };
 		74762F4F1574273300B88E68 /* SBPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74762F4D1574273200B88E68 /* SBPreferencesViewController.m */; };
 		74762F501574273300B88E68 /* SBPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74762F4E1574273300B88E68 /* SBPreferencesViewController.xib */; };
 /* End PBXBuildFile section */
@@ -164,6 +168,10 @@
 		56E348981573DAD80038070F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		56E3489D1573DCFB0038070F /* SBKeepAliveCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBKeepAliveCommand.h; path = Commands/SBKeepAliveCommand.h; sourceTree = "<group>"; };
 		56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBKeepAliveCommand.m; path = Commands/SBKeepAliveCommand.m; sourceTree = "<group>"; };
+		7435A0621575714900F9EE33 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7435A0641575714D00F9EE33 /* retina_icon_battleships.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_icon_battleships.png; sourceTree = "<group>"; };
+		7435A0661575715500F9EE33 /* normal_icon_battleships.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_icon_battleships.png; sourceTree = "<group>"; };
+		7435A0681575715A00F9EE33 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		74762F4C1574273200B88E68 /* SBPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPreferencesViewController.h; sourceTree = "<group>"; };
 		74762F4D1574273200B88E68 /* SBPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPreferencesViewController.m; sourceTree = "<group>"; };
 		74762F4E1574273300B88E68 /* SBPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPreferencesViewController.xib; sourceTree = "<group>"; };
@@ -197,6 +205,10 @@
 		56ADA4FA15510F0B0071461C = {
 			isa = PBXGroup;
 			children = (
+				7435A0681575715A00F9EE33 /* Default.png */,
+				7435A0661575715500F9EE33 /* normal_icon_battleships.png */,
+				7435A0641575714D00F9EE33 /* retina_icon_battleships.png */,
+				7435A0621575714900F9EE33 /* Default@2x.png */,
 				56E348971573DAAB0038070F /* Localizable.strings */,
 				56ADA50F15510F0B0071461C /* Seabattle */,
 				56ADA52D15510F0C0071461C /* SeabattleTests */,
@@ -426,6 +438,10 @@
 				56C82C8A15692DF90037281D /* SBGameSetupViewController.xib in Resources */,
 				56E348941573DAAB0038070F /* Localizable.strings in Resources */,
 				74762F501574273300B88E68 /* SBPreferencesViewController.xib in Resources */,
+				7435A0631575714900F9EE33 /* Default@2x.png in Resources */,
+				7435A0651575714D00F9EE33 /* retina_icon_battleships.png in Resources */,
+				7435A0671575715500F9EE33 /* normal_icon_battleships.png in Resources */,
+				7435A0691575715A00F9EE33 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
