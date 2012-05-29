@@ -17,5 +17,6 @@
 
 - (id)initWithName:(NSString*)pName;
 - (id)initMySelf;
+- (id)initWithUserDefault;
 
 @end
