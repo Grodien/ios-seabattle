@@ -14,7 +14,8 @@ typedef enum {
   Error,
   Win,
   PlayerFound,
-  KeepAlive
+  KeepAlive,
+  LOL
 }ServerCommand;
 
 typedef enum {
