@@ -14,7 +14,7 @@
 "renewGameFieldButtonTitle" = "Renew Gamefield";
 "ReadyButtonTitleState1" = "Ready";
 "ReadyButtonTitleState2" = "Unready";
-"ReadyStataReady" = "Ready";
+"ReadyStateReady" = "Ready";
 "ReadyStateNotReady" = "Not Ready";
 "YouWonText" = "Congratulation\nYou Won!";
 "YouLostText" = "You Lost!";
@@ -26,6 +26,7 @@
 "usernamelabel" = "Username";
 "winsLabel" = "Wins";
 "lossesLabel" = "Losses";
+"NameUnknown" = "Unknown";
 
 
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560692BB1575F49D000E7077 /* SBPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74762F4D1574273200B88E68 /* SBPreferencesViewController.m */; };
+		560692BD1575F4BD000E7077 /* SBKeepAliveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E3489E1573DCFB0038070F /* SBKeepAliveCommand.m */; };
+		560692BE1575F4BF000E7077 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56ADA51915510F0B0071461C /* SBAppDelegate.m */; };
 		56ADA50A15510F0B0071461C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50915510F0B0071461C /* UIKit.framework */; };
 		56ADA50C15510F0B0071461C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50B15510F0B0071461C /* Foundation.framework */; };
 		56ADA50E15510F0B0071461C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADA50D15510F0B0071461C /* CoreGraphics.framework */; };
@@ -48,7 +51,6 @@
 		56C82C8B15692DF90037281D /* SBGameSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C82C8715692DF90037281D /* SBGameSetupViewController.xib */; };
 		56C82C9515692F940037281D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C82C9415692F940037281D /* QuartzCore.framework */; };
 		56C82C98156939D50037281D /* SBGameFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C97156939D50037281D /* SBGameFieldView.m */; };
-		56C82C99156939D50037281D /* SBGameFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C82C97156939D50037281D /* SBGameFieldView.m */; };
 		56DE075715611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
 		56DE075815611FF4006DD960 /* SBQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE075215611FF4006DD960 /* SBQueueViewController.m */; };
 		56DE075915611FF4006DD960 /* SBQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE075315611FF4006DD960 /* SBQueueViewController.xib */; };
@@ -538,7 +540,9 @@
 				56C82C7D156912490037281D /* SBPlayerFound.m in Sources */,
 				56C82C8215692C8D0037281D /* SBGameViewController.m in Sources */,
 				56C82C8915692DF90037281D /* SBGameSetupViewController.m in Sources */,
-				56C82C99156939D50037281D /* SBGameFieldView.m in Sources */,
+				560692BB1575F49D000E7077 /* SBPreferencesViewController.m in Sources */,
+				560692BD1575F4BD000E7077 /* SBKeepAliveCommand.m in Sources */,
+				560692BE1575F4BF000E7077 /* SBAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

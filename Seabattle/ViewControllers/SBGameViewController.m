@@ -93,8 +93,28 @@
     
     if (cmd.win) {
       [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:NSLocalizedString(@"YouWonText", @"") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+      
+      NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+      
+      if ([user stringForKey:@"nr wins"] != nil) {
+        int wins = [[user stringForKey:@"nr wins"] intValue];
+        wins++;
+        [user setObject:[NSString stringWithFormat:@"%d", wins] forKey:@"nr wins"];
+      } else {
+        [user setObject:@"1" forKey:@"nr wins"];
+      }
     } else {
       [[[UIAlertView alloc] initWithTitle:@"SeaBattle" message:NSLocalizedString(@"YouLostText", @"") delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+      
+      NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+      
+      if ([user stringForKey:@"nr losses"] != nil) {
+        int losses = [[user stringForKey:@"nr losses"] intValue];
+        losses++;
+        [user setObject:[NSString stringWithFormat:@"%d", losses] forKey:@"nr losses"];
+      } else {
+        [user setObject:@"1" forKey:@"nr losses"];
+      }
     }
     
     enemyGameField.hideShips = NO;

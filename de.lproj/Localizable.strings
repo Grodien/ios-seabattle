@@ -14,7 +14,7 @@
 "renewGameFieldButtonTitle" = "Spielfeld erneuern";
 "ReadyButtonTitleState1" = "Bereit";
 "ReadyButtonTitleState2" = "Nicht bereit";
-"ReadyStataReady" = "Bereit";
+"ReadyStateReady" = "Bereit";
 "ReadyStateNotReady" = "Nicht bereit";
 "YouWonText" = "Gratulation\nSie haben gewonnen!";
 "YouLostText" = "Sie haben verloren!";
@@ -26,6 +26,7 @@
 "usernamelabel" = "Benutzername";
 "winsLabel" = "Gewonnen";
 "lossesLabel" = "Verloren";
+"NameUnkown" = "Unbekannt";
 
 
-"ErrorPlayerDisconnectedText" = "Ein Spieler hat das Spiel verlassen. Diese Spiel wird nun beendet!";
+"ErrorPlayerDisconnectedText" = "Ein Spieler hat das Spiel verlassen. Dieses Spiel wird nun beendet!";

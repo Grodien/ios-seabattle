@@ -8,6 +8,8 @@
 
 #import "SBPreferencesViewController.h"
 #import "SBAppDelegate.h"
+#import "SBGame.h"
+#import "SBPlayer.h"
 
 @interface SBPreferencesViewController ()
 
@@ -76,11 +78,20 @@
 }
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
+  
+  NSString* name = textFieldUsername.text;
+  
     NSUserDefaults *usernameDefault = [NSUserDefaults standardUserDefaults];
-    [usernameDefault setObject:textFieldUsername.text forKey:@"Username"];
+    [usernameDefault setObject:name forKey:@"Username"];
+  
+  if (name != nil) {
+    [SBGame sharedInstance].me.name = name;
+  } else {
+    [SBGame sharedInstance].me.name = NSLocalizedString(@"NameUnknown", @"");
+  }
     
-    [textField resignFirstResponder];
-    return YES;
+  [textField resignFirstResponder];
+  return YES;
 }
 
 - (IBAction)buttonOKPressed:(UIButton *)sender {
